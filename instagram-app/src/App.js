@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-
 import DummyDatta from './dummy-data';
 
 import PostContainer from './components/PostContainer/PostContainer';
+import CommentSection from './components/CommentSection/CommentSection';
 
 class App extends Component {
   constructor(){

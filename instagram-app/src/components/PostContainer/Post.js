@@ -1,6 +1,7 @@
 import React from 'react';
 
-import './PostContainer.css'
+import CommentSection from '../CommentSection/CommentSection'
+
 
 const Post = props =>{
     console.log(props)
@@ -17,6 +18,13 @@ const Post = props =>{
                 alt={props.post.id + 'Pic'}
                 src={props.post.imageUrl} />
             </div>
+            
+            <div className='likes'>
+                {props.post.likes}
+                <h4>Likes</h4>
+            </div>
+
+                <CommentSection comments={props.post.comments} />
         </div>
     )
 }
