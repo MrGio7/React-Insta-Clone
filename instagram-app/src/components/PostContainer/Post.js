@@ -6,7 +6,6 @@ import '../PostContainer/PostContainer.css'
 
 
 const Post = props =>{
-    console.log(props)
     return(
         <div className='post-container'>
             <div className='user'>
@@ -24,8 +23,15 @@ const Post = props =>{
             <div className='likes'>
                 <h4>{props.post.likes + ' Likes'}</h4>
             </div>
-
+            
                 <CommentSection comments={props.post.comments} />
+
+            <div className='new-comment'>
+                <form>
+                    <input type="text" placeholder='Add a comment...' />
+                </form>
+                <span>&#183;&#183;&#183;</span>
+            </div>
         </div>
     )
 }
