@@ -20,7 +20,7 @@
 .user img{
     width: 48px;
     height: 48px;
-    margin: 0 10px;
+    margin: 10px 10px;
     border-radius: 50%;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .likes{
-    margin-left: 10px;
+    margin: 10px 10px 0;
 }
 
 .new-comment{
