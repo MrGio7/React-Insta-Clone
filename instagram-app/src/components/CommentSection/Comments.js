@@ -1,18 +1,27 @@
 import React from 'react';
 
-const Comments = props =>{
-    return(
-        <div className='comment-block'>
+class Comments extends React.Component {
+    constructor(props){
+        super(props)
 
-            <div className='comments'>
-                <h4>{props.comments.username}</h4>
-                {props.comments.text}
+        this.state = {
+            comments: props.comments
+        }
+    }
+
+    render(){
+        return(
+            <div className='comment-block'>
+
+                <div className='comments'>
+                    <p> <strong>{this.state.comments.username}</strong> {this.state.comments.text}</p>
+                </div>
+                
+                <div className='new-comments'>
+                </div>
             </div>
-            
-            <div className='new-comments'>
-            </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default Comments;

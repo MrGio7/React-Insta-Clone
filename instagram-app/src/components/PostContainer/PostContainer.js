@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Post from './Post';
-import Comments from '../CommentSection/Comments';
 
 const PostContainer = props =>{
     return(
