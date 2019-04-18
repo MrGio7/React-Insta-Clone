@@ -10,8 +10,12 @@ class App extends Component {
     super();
 
     this.state = {
-      posts: DummyDatta
+      posts: []
     }
+  }
+
+  componentDidMount() {
+    this.setState ({posts: DummyDatta})
   }
 
   render() {
