@@ -5,6 +5,7 @@ import Comments from './Comments';
 import './CommentSection.css'
 
 const CommentSection = props =>{
+  console.log(props)
     return(
         <div className='comment-section'>
             {props.comments.map(i => <Comments key={i.id} comments={i} /> )}
