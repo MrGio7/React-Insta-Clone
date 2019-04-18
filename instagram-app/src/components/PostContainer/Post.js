@@ -49,10 +49,17 @@ class Post extends React.Component {
                 src={this.props.post.thumbnailUrl} /> 
                 <h2>{this.props.post.username}</h2>
             </div>
+
             <div className='pic'>
                 <img 
                 alt={this.props.post.id + 'Pic'}
                 src={this.props.post.imageUrl} />
+            </div>
+
+            <div className='like-share-btns'>
+                <div className='like-btn'></div>
+                <div className='comment-btn'></div>
+                <div className='share-btn'></div>
             </div>
             
             <div className='likes'>

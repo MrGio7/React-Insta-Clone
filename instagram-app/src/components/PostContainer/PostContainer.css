@@ -59,3 +59,38 @@
     text-align: center;
     font-size: 1.5rem;
 }
+
+.like-share-btns{
+    display: flex;
+    flex-direction: row;
+}
+
+.like-share-btns .like-btn{
+    background-image: url('../img/navIcons.png');
+    background-position: -78px -203px;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.like-share-btns .comment-btn{
+    background-image: url('../img/navIcons.png');
+    background-position: -131px -146px;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.like-share-btns .share-btn{
+    background-image: url('../img/navIcons.png');
+    background-position: -26px -255px;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+    cursor: pointer;
+}
