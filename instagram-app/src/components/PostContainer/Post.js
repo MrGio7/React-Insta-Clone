@@ -11,7 +11,8 @@ class Post extends React.Component {
 
         this.state = {
             comments: this.props.post.comments,
-            newComment: ''
+            newComment: '',
+            likes: this.props.post.likes
         }
     }
 
@@ -40,7 +41,18 @@ class Post extends React.Component {
         })
     }
 
+    likeBtn = () =>{
+        let copiedLikes = this.state.likes;
+
+        this.setState({
+            likes: ++copiedLikes
+        })
+    }
+
+
+
     render(){
+        console.log(this.state.likes)
     return(
         <div className='post-container'>
             <div className='user'>
@@ -57,13 +69,13 @@ class Post extends React.Component {
             </div>
 
             <div className='like-share-btns'>
-                <div className='like-btn'></div>
+                <div className='like-btn' onClick={this.likeBtn}></div>
                 <div className='comment-btn'></div>
                 <div className='share-btn'></div>
             </div>
             
             <div className='likes'>
-                <h4>{this.props.post.likes + ' Likes'}</h4>
+                <h4>{this.state.likes + ' Likes'}</h4>
             </div>
             
                 <CommentSection comments={this.state.comments} addArray={this.addArray} />
