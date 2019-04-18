@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SearchBar.css'
 
-const SearchBar = () =>{
+const SearchBar = (props) =>{
     return(
         <div className='search-bar'>
             <div>
@@ -12,7 +12,7 @@ const SearchBar = () =>{
 
                 <div className='logo2'></div>
             </div>
-                <div className='search'> <form> <input type="text" autoCapitalize="none" placeholder = "Search"></input> </form> </div>
+                <div className='search'> <form> <input type="text" autoCapitalize="none" placeholder = "Search" onKeyDown={props.search}></input> </form> </div>
             <div className="logo-container">
                 <div className='logo3'></div>
 

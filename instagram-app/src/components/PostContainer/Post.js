@@ -52,7 +52,6 @@ class Post extends React.Component {
 
 
     render(){
-        console.log(this.state.likes)
     return(
         <div className='post-container'>
             <div className='user'>

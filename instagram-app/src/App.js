@@ -6,25 +6,39 @@ import PostContainer from './components/PostContainer/PostContainer';
 import SearchBar from './components/SearchBar/SearchBar';
 
 class App extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
 
     this.state = {
-      posts: []
+      posts: [],
+      filteredPosts: []
     }
   }
 
+  searchHandle = e =>{
+    let posts = this.state.posts.filter(p => {
+      return p.username.includes(e.target.value)
+    });
+    this.setState({filteredPosts: posts})
+  }
+
   componentDidMount() {
-    this.setState ({posts: DummyDatta})
+    this.setState ({
+      posts: DummyDatta,
+      filteredPosts: DummyDatta
+    })
   }
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         <div className='header-nav'>
-          <SearchBar  />
+          <SearchBar
+            search={this.searchHandle}
+          />
         </div>
-        <PostContainer posts={this.state.posts} />
+        <PostContainer posts={this.state.filteredPosts} />
       </div>
     );
   }
