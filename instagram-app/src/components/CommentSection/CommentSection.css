@@ -1,0 +1,9 @@
+.comment-section {
+    margin:0 10px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+}
+
+.comment-section .comments{
+    margin-top:10px;
+}

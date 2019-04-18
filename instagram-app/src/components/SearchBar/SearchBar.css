@@ -1,0 +1,94 @@
+.search-bar{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+    padding: 26px 20px;
+    width: 100%;
+    height: 77px;
+
+}
+
+.search-bar div{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.header-nav .logo1{
+    background-image: url('../img/navIcons.png');
+    background-position: -52px -177px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer; 
+    
+}
+
+.header-nav .split{
+    background-color: #262626;
+    height: 28px;
+    margin: 0 16px;
+    width: 1px;
+}
+
+.header-nav .logo2{
+    background-image: url('../img/navIcons.png');
+    background-repeat: no-repeat;
+    background-position: 0 -146px;
+    height: 29px;
+    width: 103px;
+    cursor: pointer; 
+}
+
+.header-nav .search{
+    height: 28px;
+    width: 215px;
+
+}
+
+.header-nav .search input{
+    border: solid 1px #dbdbdb;
+    border-radius: 3px;
+    color: #262626;
+    padding: 3px 20px 3px 20px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.search-bar .logo-container{
+    display: flex;
+    justify-content: space-between;
+    width: 156px;
+}
+
+.header-nav .logo3{
+    background-image: url('../img/navIcons.png');
+    background-repeat: no-repeat;
+    background-position: -268px -26px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer; 
+}
+
+.header-nav .logo4{
+    background-image: url('../img/navIcons.png');
+    background-position: -78px -203px;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    cursor: pointer; 
+}
+
+.header-nav .logo5{
+    background-image: url('../img/navIcons.png');
+    background-position: -216px -104px;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    cursor: pointer; 
+}
