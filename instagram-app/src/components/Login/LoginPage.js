@@ -15,6 +15,12 @@ class LoginPage extends React.Component{
         this.setState({ [e.target.name]: e.target.value});
     }
 
+    handleLoginBtn = () =>{
+        const user = this.state.username;
+        localStorage.setItem('user', user);
+        window.location.reload();
+    }
+
     render(){
         console.log(this.state.password)
         return(
@@ -50,7 +56,7 @@ class LoginPage extends React.Component{
                     </form>
                 </div>
 
-                <button type='button'>Login</button>
+                <button type='button' onClick={this.handleLoginBtn} >Login</button>
                 
             </div>
         )

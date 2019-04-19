@@ -12,7 +12,7 @@ const withAuthenticate = postsPagePar => loginPagePar =>
                 login: false
             }
         }
-
+        
         
     render(){
         if(this.state.login) return <PostsPage />;
