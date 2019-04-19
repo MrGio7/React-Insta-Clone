@@ -29,7 +29,6 @@ class PostsPage extends React.Component {
     }
   
     render() {
-      console.log(this.state)
       return (
         <div className="App">
           <div className='header-nav'>
