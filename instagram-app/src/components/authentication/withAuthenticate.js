@@ -12,7 +12,14 @@ const withAuthenticate = postsPagePar => loginPagePar =>
                 login: false
             }
         }
-        
+
+        componentDidMount() {
+            if (!localStorage.getItem('user')) {
+              this.setState({ login: false });
+            } else {
+              this.setState({ login: true });
+            }
+          }
         
     render(){
         if(this.state.login) return <PostsPage />;
