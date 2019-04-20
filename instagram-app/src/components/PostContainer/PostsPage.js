@@ -16,7 +16,9 @@ class PostsPage extends React.Component {
   
     searchHandle = e =>{
       let posts = this.state.posts.filter(p => {
+        console.log(e.target.value)
         return p.username.includes(e.target.value)
+        
       });
       this.setState({filteredPosts: posts})
     }
