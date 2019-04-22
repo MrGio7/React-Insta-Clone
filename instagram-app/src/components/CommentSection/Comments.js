@@ -16,7 +16,6 @@ class Comments extends React.Component {
                 <div className='comments'>
                     <p> <strong>{this.state.comments.username}</strong> {this.state.comments.text}</p>
                 </div>
-                
             </div>
         )
     }
