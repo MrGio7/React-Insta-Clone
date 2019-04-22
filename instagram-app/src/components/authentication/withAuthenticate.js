@@ -14,7 +14,7 @@ const withAuthenticate = postsPagePar => loginPagePar =>
         }
 
         componentDidMount() {
-            if (!localStorage.getItem('user')) {
+            if (!localStorage.getItem('user') || !localStorage.getItem('password')) {
               this.setState({ login: false });
             } else {
               this.setState({ login: true });

@@ -17,7 +17,9 @@ class LoginPage extends React.Component{
 
     handleLoginBtn = () =>{
         const user = this.state.username;
+        const password = this.state.password
         localStorage.setItem('user', user);
+        localStorage.setItem('password', password)
         window.location.reload();
     }
 
